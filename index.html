@@ -1,91 +1,126 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zinich LM - Official Download</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    
-        <header class="glass-header">
-            <div class="logo">
-                ZINICH</div>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#gallery">Screenshots</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-    <main class="container">
-            <section class="hero-section glass-card">
-                <img src="./images/logo.png" alt="Zinich LM Logo" class="app-logo">
-                <h1>GH SHS  Learner's Materials FOR ALL</h1>
-                <p class="subtitle"> <span>LMs From GES, </span> App From ZINICH</p>
-                <p class="description">
-                    Your ultimate 100% offline study companion for SHS students. Access core textbooks, curriculum guides, and interactive study resources instantly without using data.
-                </p>
-                
-                <a href="https://github.com/Zain-duah/Zinich-Gh-LM-SHS/releases/download/v2.0.0_stable/Zinich.LM.Y2.apk" class="download-btn">
-                    Download the App
-                </a>
-                <span class="tap-notice">Single tap to start download instantly</span>
-            </section>
-    
-            <section id="about" class="glass-card section-margin">
-                <h2>About the App</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <h3>📚 Total Offline Access</h3>
-                        <p>Read all materials seamlessly without needing an active internet connection or data bundle.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>⚡ Optimized Performance</h3>
-                        <p>Highly compressed, high-quality textbooks designed to save your storage space.</p>
-                    </div>
-                    <div class="feature-item">
-                        <h3>🎯 Made for SHS</h3>
-                        <p>Tailored curriculum content specifically built to help students excel in their courses.</p>
-                    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zinich LM — Official Download</title>
+  <meta name="description" content="Zinich LM — 100% offline SHS learners' materials. Access textbooks and curriculum guides without data. Android APK download." />
+  <link rel="canonical" href="https://zain-duah.github.io/Gh-SHS-Y2-Lm-download-page/" />
+  <meta name="theme-color" content="#0a0a0a" />
 
-<div class="feature-item">
-                        <h3>🖥️User-friendly Interface</h3>
-                        <p>The app give users a clean and smooth User Interface, and enhances user easier navigations.</p>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="gallery" class="glass-card section-margin">
-                <h2>App Screenshots</h2>
-                <div class="screenshot-gallery">
-                    <div class="screenshot-wrapper"><img src="./images/img1.png" alt="App Screen 1"></div>
-                    <div class="screenshot-wrapper"><img src="./images/img2.png" alt="App Screen 2"></div>
-                    <div class="screenshot-wrapper"><img src="./images/img3.png" alt="App Screen 3"></div>
-                </div>
-<div class="screenshot-wrapper"><img src="./images/img4.png" alt="App Screen 3"></div>
-                </div>
-            </section>
-    
-            <section id="contact" class="glass-card section-margin">
-                <h2>Contact Developer</h2>
-                <p>Have questions, suggestions, or found a bug? Reach out directly!</p>
-                <div class="contact-links">
-                    <a href="mailto: zainduah55@gmail.com" class="contact-btn">✉️ Email Support</a>
-                    <a href="https://github.com/Zain-duah/" target="_blank" class="contact-btn">💻 GitHub Profile</a>
-                </div>
-            </section>
-        </main>
-    
-        <footer>
-            <p>© 2026 ZINICH :LM All rights reserved</p>
-        </footer>
-    <script type="text/javascript" src="main.js">
-        
-    </script>
-    
-    
-    
-    
-    
-    </body>
-    </html>
+  <!-- Favicon / PWA (optional) -->
+  <link rel="icon" href="favicon.ico" />
+  <!-- add a manifest.json if you want PWA installability -->
+  <!-- <link rel="manifest" href="/manifest.json" /> -->
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="glass-header" role="banner">
+    <div class="logo" aria-hidden="false">ZINICH</div>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Screenshots</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero-section glass-card" aria-labelledby="hero-title">
+      <img src="./images/logo.png" alt="Zinich LM logo" class="app-logo" loading="lazy">
+      <h1 id="hero-title">GH SHS Learner's Materials — For All</h1>
+      <p class="subtitle"><span>LMs from GES,</span> app from ZINICH</p>
+      <p class="description">
+        Your ultimate 100% offline study companion for SHS students. Access core textbooks, curriculum guides, and interactive study resources instantly without using mobile data.
+      </p>
+
+      <!-- Download link: treat as primary action. aria-label helps screen readers. -->
+      <a
+        href="https://github.com/Zain-duah/Zinich-Gh-LM-SHS/releases/download/v2.0.0_stable/Zinich.LM.Y2.apk"
+        class="download-btn"
+        role="button"
+        aria-label="Download Zinich LM Android APK"
+      >
+        Download the App
+      </a>
+      <span class="tap-notice" aria-hidden="true">Single tap to start download instantly</span>
+    </section>
+
+    <section id="about" class="glass-card section-margin" aria-labelledby="about-title">
+      <h2 id="about-title">About the App</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>📚 Total Offline Access</h3>
+          <p>Read all materials seamlessly without needing an active internet connection or data bundle.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>⚡ Optimized Performance</h3>
+          <p>Highly compressed, high-quality textbooks designed to save storage space and load fast.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🎯 Made for SHS</h3>
+          <p>Tailored curriculum content to help students excel in their courses.</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>🖥️ User-friendly Interface</h3>
+          <p>The app gives users a clean, smooth interface and makes navigation easier.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="glass-card section-margin" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">App Screenshots</h2>
+      <div class="screenshot-gallery" role="list">
+        <div class="screenshot-wrapper" role="listitem">
+          <img src="./images/img1.png" alt="Zinich LM screenshot 1" loading="lazy">
+        </div>
+        <div class="screenshot-wrapper" role="listitem">
+          <img src="./images/img2.png" alt="Zinich LM screenshot 2" loading="lazy">
+        </div>
+        <div class="screenshot-wrapper" role="listitem">
+          <img src="./images/img3.png" alt="Zinich LM screenshot 3" loading="lazy">
+        </div>
+        <div class="screenshot-wrapper" role="listitem">
+          <img src="./images/img4.png" alt="Zinich LM screenshot 4" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="glass-card section-margin" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact Developer</h2>
+      <p>Have questions, suggestions, or found a bug? Reach out directly.</p>
+      <div class="contact-links">
+        <a href="mailto:zainduah55@gmail.com" class="contact-btn" aria-label="Email support">✉️ Email Support</a>
+        <a href="https://github.com/Zain-duah/" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="GitHub profile">💻 GitHub Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© <span id="year">2026</span> ZINICH — LM. All rights reserved.</p>
+  </footer>
+
+  <!-- Structured data for SEO (adjust fields as needed) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Zinich LM",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "Education",
+    "url": "https://github.com/Zain-duah/Zinich-Gh-LM-SHS",
+    "downloadUrl": "https://github.com/Zain-duah/Zinich-Gh-LM-SHS/releases/download/v2.0.0_stable/Zinich.LM.Y2.apk"
+  }
+  </script>
+
+  <!-- Prefer defer for external JS -->
+  <script src="main.js" defer></script>
+</body>
+</html>
