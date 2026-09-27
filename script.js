@@ -135,5 +135,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const revealItems = document.querySelectorAll(
+    ".hero-text, .search-box, .app-card, .feature, .step, .faq-item, .notice-content, .footer-column, .brand"
+  );
+
+  revealItems.forEach((item, index) => {
+    item.classList.add("reveal");
+    item.style.transitionDelay = `${index * 70}ms`;
+  });
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("visible"));
+  }
+
   filterApps();
 });
