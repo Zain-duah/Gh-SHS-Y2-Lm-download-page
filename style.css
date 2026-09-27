@@ -21,6 +21,11 @@ button:disabled{cursor:not-allowed;opacity:.6}
 @font-face{font-family:myfont;src:url("./assets/fonts/font.otf")}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}
 .nav-container{position:relative;min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo-main{
+  justify-self: center;
+  align-self: center;
+  
+}
 .brand{display:inline-flex;align-items:baseline;gap:6px;font-weight:800;letter-spacing:-.04em}
 .brand-name{font-size:2.6rem;color:var(--black);font-family:myfont}
 .brand-product{font-size:1.15rem;color:var(--main);font-weight:900}
